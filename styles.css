@@ -1,0 +1,146 @@
+:root{
+  --orange:#ff6a00;
+  --orange-dark:#e65c00;
+  --blue:#4aa3df;
+  --purple:#9b59b6;
+  --green:#2ecc71;
+  --pink:#e84393;
+  --dark:#34495e;
+  --bg:#f4f6fb;
+  --card:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  padding-bottom:90px;
+}
+
+/* TOP BAR */
+.topbar{
+  background:linear-gradient(90deg,var(--orange),var(--orange-dark));
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 18px;
+  font-weight:700;
+}
+
+.topbar .logo{
+  font-size:18px;
+}
+
+.topbar .lang{
+  font-size:14px;
+}
+
+/* MAIN */
+.container{
+  padding:16px;
+}
+
+/* BALANCE CARD */
+.balance-card{
+  background:linear-gradient(135deg,#2bb1e0,#3498db);
+  border-radius:16px;
+  color:#fff;
+  padding:18px;
+  margin-bottom:18px;
+  position:relative;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.balance-card .level{
+  position:absolute;
+  top:14px;
+  left:14px;
+  background:rgba(255,255,255,0.2);
+  padding:6px 10px;
+  border-radius:12px;
+  font-weight:700;
+}
+
+.balance-title{
+  margin-top:24px;
+  font-size:14px;
+  opacity:.9;
+}
+
+.balance-amount{
+  font-size:30px;
+  font-weight:700;
+  margin-top:6px;
+}
+
+.balance-amount span{
+  font-size:16px;
+}
+
+/* STATS GRID */
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.stat{
+  background:var(--card);
+  border-radius:14px;
+  padding:14px;
+  box-shadow:0 8px 18px rgba(0,0,0,.1);
+}
+
+.stat span{
+  font-size:12px;
+  color:#555;
+}
+
+.stat strong{
+  display:block;
+  margin-top:6px;
+  font-size:18px;
+}
+
+/* COLORS */
+.blue{border-left:6px solid var(--blue);}
+.purple{border-left:6px solid var(--purple);}
+.orange{border-left:6px solid var(--orange);}
+.green{border-left:6px solid var(--green);}
+.pink{border-left:6px solid var(--pink);}
+.dark{border-left:6px solid var(--dark);}
+
+/* BOTTOM NAV */
+.bottom-nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#fff;
+  display:flex;
+  justify-content:space-around;
+  padding:10px 0;
+  border-top:1px solid #ddd;
+}
+
+.nav-item{
+  text-align:center;
+  font-size:12px;
+  color:#777;
+}
+
+.nav-item i{
+  display:block;
+  font-size:18px;
+  margin-bottom:4px;
+}
+
+.nav-item.active{
+  color:var(--orange);
+}
